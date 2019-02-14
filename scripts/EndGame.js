@@ -61,5 +61,6 @@ Game.EndGame.prototype = {
             }
 		}
 	},this);
+	this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onUp.add(function(){ this.state.start('Play');},this);    
     },
 }
