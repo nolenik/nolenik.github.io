@@ -6,7 +6,7 @@ Game.EndGame.prototype = {
         this.add.image(0,0,'back');
     },
     create:function() {
-	this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.add(function(){ this.state.start('Play');},this);    
+	this.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onUp.add(function(){ this.state.start('Play');},this);    
          //create game over text and show highscore
         countDisplay = this.add.bitmapText(this.world.centerX, 80,'desyrel', "Game Over\nHighscore: "+localStorage.getItem("highscore"), 50);           
         countDisplay.anchor.x=0.5;
