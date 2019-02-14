@@ -1,0 +1,23 @@
+<!doctype html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Feed the monkey</title>
+        <script src="scripts/phaser.min.js"></script>
+        <script src="scripts/Preload.js"></script>
+        <script src="scripts/StartGame.js"></script>
+        <script src="scripts/Play.js"></script>
+        <script src="scripts/EndGame.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+                var game = new Phaser.Game(800, 600, Phaser.CANVAS, '');
+                game.state.add('Preload',Game.Preload);
+                game.state.add('StartGame',Game.StartGame);
+                game.state.add('Play', Game.Play);
+                game.state.add('EndGame',Game.EndGame);
+                game.state.start('Preload');
+            }
+        </script>
+    </body>
+</html>
