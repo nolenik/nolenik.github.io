@@ -28,7 +28,7 @@ create: function() {
     minForce=300;
     maxForce=800;
 	beginTime=10800;
-    maxTime=21600;
+    maxTime=2160000;
 	leftTime=beginTime;
 	score=0;
 	deltaForce=10;
