@@ -1,4 +1,4 @@
-
+	
 
 Game.Play = function(game) {};
 
@@ -27,7 +27,7 @@ create: function() {
 	force = 300;
     minForce=300;
     maxForce=800;
-	beginTime=10800;
+	beginTime=1080000;
     maxTime=2160000;
 	leftTime=beginTime;
 	score=0;
